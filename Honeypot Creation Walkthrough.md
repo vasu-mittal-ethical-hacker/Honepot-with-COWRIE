@@ -16,7 +16,7 @@ Cowrie is not in Kali’s default repository, so we’ll download it from GitHub
 : List Contents to double check the clone after navigating to the directory:
 `cd /home/kali/Honeypot`
 `ls`
-![[list out honeypot dir.png]]
+![Uploading list out honeypot dir.png…]()
 
 Step 3: Setting up the python Virtual Environment
 
@@ -25,7 +25,7 @@ Step 3: Setting up the python Virtual Environment
 `apt install python3-venv -y`
 : Create a virtual environment within the Honeypot directory:
 `python3 -m venv cowrie-env`
-![[setup venv.png]]
+![setup venv](https://github.com/user-attachments/assets/0f691900-8400-401d-80cb-37a385d8f749)
 
 : Activate the virtual environment:
 `source cowrie-env/bin/activate`
