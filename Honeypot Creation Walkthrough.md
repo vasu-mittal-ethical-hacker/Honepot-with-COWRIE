@@ -16,7 +16,7 @@ Cowrie is not in Kali’s default repository, so we’ll download it from GitHub
 : List Contents to double check the clone after navigating to the directory:
 `cd /home/kali/Honeypot`
 `ls`
-![Uploading list out honeypot dir.png…]()
+![list out honeypot dir](https://github.com/user-attachments/assets/4850dcad-9c28-4354-82c5-b8bcfa790ba2)
 
 Step 3: Setting up the python Virtual Environment
 
@@ -29,7 +29,7 @@ Step 3: Setting up the python Virtual Environment
 
 : Activate the virtual environment:
 `source cowrie-env/bin/activate`
-![[activate venv.png]]
+![activate venv](https://github.com/user-attachments/assets/07bf04ec-cb71-4e70-a927-37c690ab99fa)
 
 Step 4: Installing Dependencies
 
@@ -37,7 +37,7 @@ Step 4: Installing Dependencies
 
 :Installing all the Python packages that Cowrie needs to function:
 `pip install -r requirements.txt`
-![[install requirements.png]]
+
 
 Step 5: Configure Cowrie.
 
