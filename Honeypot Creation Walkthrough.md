@@ -37,6 +37,7 @@ Step 4: Installing Dependencies
 
 :Installing all the Python packages that Cowrie needs to function:
 `pip install -r requirements.txt`
+![install req](https://github.com/user-attachments/assets/8584d3f4-011f-4b79-83d3-7e837bf114a3)
 
 
 Step 5: Configure Cowrie.
@@ -47,7 +48,7 @@ Step 5: Configure Cowrie.
 
  The file has to be copied from cowrie.cfg.dist to cowrie.cfg because cowrie needs this specific file to run. This file allows us to make many changes like adjusting settings, without the original template file being affected.
  `cp etc/cowrie.cfg.dist etc/cowrie.cfg`
-![[copy file.png]]
+![copy file](https://github.com/user-attachments/assets/fde25836-a79f-46c0-ba6e-680ad2f6e103)
 
 :Open the configuration file using a text editor like nano or mousepad to adjust the settings if needed.
 
@@ -91,7 +92,7 @@ So, when an attacker connects to port **22**, they’re secretly connecting to 
 
  This setup can help capture more realistic attacks.
 `iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222`
-![[rerouting.png]]
+![rerouting](https://github.com/user-attachments/assets/97d6a7c6-b5ee-40f9-96f7-22ca8e3bb942)
 
 **: iptables:** This is the tool used to create rules for managing network traffic.
 
@@ -101,7 +102,7 @@ So, when an attacker connects to port **22**, they’re secretly connecting to 
 
 **: -p tcp:** Indicates that this rule applies to TCP traffic (which SSH uses).
 
-· — dport 22: The port we want to redirect (22, the default SSH port).
+**· — dport 22:** The port we want to redirect (22, the default SSH port).
 
 **· -j REDIRECT:** Tells the system to forward the traffic.
 
@@ -120,12 +121,12 @@ Step 7: Setting up Permissions:
 
 {a}Changing Ownership:
 `chown -R kali:kali /home/kali/Honeypot/var/run`
-![[changing ownership.png]]
+![changing ownership](https://github.com/user-attachments/assets/9d052cde-c86a-4a09-9c3e-70b4d25c06a1)
 
 :**/var/run**: Temporary, runtime data, usually PID files and other temporary information needed for the application’s active session.
 
 `chown -R kali:kali /home/kali/Honeypot/var/lib/cowrie`
-![[changing own var lib.webp]]
+![changing own var lib](https://github.com/user-attachments/assets/e78a7036-b4b0-4cfc-84ff-9e1eef2de49e)
 
 :Setting Permissions:
 `chmod -R 755 /home/kali/Honeypot/var/run`
@@ -133,7 +134,7 @@ Step 7: Setting up Permissions:
 :Verifying Ownership:
 `ls -l /home/kali/Honeypot/var/lib/cowrie`
 `ls -l /home/kali/Honeypot/var/run`
-![[verify own.webp]]
+![verify own](https://github.com/user-attachments/assets/d5e1bbe2-6586-4f7f-8613-6239a41558c0)
 
 {b}Changing to the non root user
 	This is important as the root user cannot run cowrie due to inbuilt restrictions.
@@ -167,7 +168,7 @@ Viewing the Logs:
 To confirm that Cowrie is capturing activity, we will check the logs for any login attempts or other interactions. Logs are records of everything that happens in Cowrie — like login attempts or commands attackers try. Reading the logs helps us to see what attackers are doing and understand their behavior. The tail command below will show you the latest entries in the logs.
 
 The log output:
-![[log output.webp]]
+![log output](https://github.com/user-attachments/assets/d16b7aa9-4497-4199-ba31-a1d9ac1b8613)
 
 : CowrieSSHFactory starting on 2222: This means Cowrie is ready to accept SSH connections on port 2222.
 
