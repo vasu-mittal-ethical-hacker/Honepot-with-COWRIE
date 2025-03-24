@@ -10,7 +10,8 @@ Cowrie is not in Kali’s default repository, so we’ll download it from GitHub
 
 : Clone the Cowrie repository:
 `git clone https://github.com/cowrie/cowrie.git /home/kali/Honeypot`
-![[clone repo.png]]
+![clone repo](https://github.com/user-attachments/assets/376bec11-c786-41f0-8d14-86e040430576)
+
 
 : List Contents to double check the clone after navigating to the directory:
 `cd /home/kali/Honeypot`
