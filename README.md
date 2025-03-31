@@ -167,12 +167,6 @@ Viewing the Logs:
 
 To confirm that Cowrie is capturing activity, we will check the logs for any login attempts or other interactions. Logs are records of everything that happens in Cowrie — like login attempts or commands attackers try. Reading the logs helps us to see what attackers are doing and understand their behavior. The tail command below will show you the latest entries in the logs.
 
-The log output:
-![log output](https://github.com/user-attachments/assets/d16b7aa9-4497-4199-ba31-a1d9ac1b8613)
-
-: CowrieSSHFactory starting on 2222: This means Cowrie is ready to accept SSH connections on port 2222.
-
-:HoneyPotTelnetFactory starting on 2223: Cowrie is also set up to accept Telnet connections on port 2223.
 
 *To stop the honey pot simply enter the command* `bin/cowrie stop` *whenever you feel the honeypot doesn't need to run.*
 
