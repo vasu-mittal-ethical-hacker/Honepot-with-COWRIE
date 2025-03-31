@@ -165,7 +165,7 @@ The Cowrie honeypot is running. The output shows a Cowrie process with the twist
 Viewing the Logs:
 `tail -f var/log/cowrie/cowrie.log`
 
-To confirm that Cowrie is capturing activity, we will check the logs for any login attempts or other interactions. Logs are records of everything that happens in Cowrie — like login attempts or commands attackers try. Reading the logs helps us to see what attackers are doing and understand their behavior. The tail command below will show you the latest entries in the logs.
+To confirm that Cowrie is capturing activity, we will check the logs for any login attempts or other interactions. Logs are records of everything that happens in Cowrie — like login attempts or commands attackers try. Reading the logs helps us to see what attackers are doing and understand their behavior. The tail command above will show you the latest entries in the logs.
 
 
 *To stop the honey pot simply enter the command* `bin/cowrie stop` *whenever you feel the honeypot doesn't need to run.*
